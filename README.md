@@ -2,12 +2,12 @@
 
 Este taller consiste en un sistema completo con **frontend en React + Apollo Client** y **backend GraphQL con Apollo Server**, desplegados en la nube con **Render**.
 
-## 🚀 Despliegue
+##  Despliegue
 
 - **Frontend:** [https://graphql-frontend-35ee.onrender.com](https://graphql-frontend-xxxx.onrender.com)
 - **Backend:** [https://graphql-backend-h107.onrender.com](https://graphql-backend-h107.onrender.com)
 
-## 🧠 Descripción
+##  Descripción
 
 El backend expone dos queries principales:
 
