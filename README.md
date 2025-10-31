@@ -1,16 +1,34 @@
-# React + Vite
+# Taller GraphQL – Énfasis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este taller consiste en un sistema completo con **frontend en React + Apollo Client** y **backend GraphQL con Apollo Server**, desplegados en la nube con **Render**.
 
-Currently, two official plugins are available:
+## 🚀 Despliegue
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** [https://graphql-frontend-35ee.onrender.com](https://graphql-frontend-xxxx.onrender.com)
+- **Backend:** [https://graphql-backend-h107.onrender.com](https://graphql-backend-h107.onrender.com)
 
-## React Compiler
+## 🧠 Descripción
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El backend expone dos queries principales:
 
-## Expanding the ESLint configuration
+```graphql
+# Consultar razas de gatos (recibe un ID)
+query {
+  catBreed(id: "abys") {
+    id
+    name
+    origin
+    description
+  }
+}
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Consultar todos los estudiantes
+query {
+  students {
+    id
+    firstName
+    lastName
+    age
+    email
+  }
+}
